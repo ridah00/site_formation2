@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'gotham', sans-serif;
+}
+
+.a_body {
+    background-color: rgba(252, 210, 14);
+}
+
+.f_body {
+    background: rgba(70, 138, 201);
+}
+
+.t_body {
+    background: rgba(132, 173, 33);
+}
+
+.r_body {
+    background: rgba(124, 152, 173);
+}
+
+.c_body {
+    background: rgba(240, 73, 37);
+}
+
+/* --------------------- la barre de navigation  -------------------  */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-inline: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+#a_for {
+    background: rgba(70, 138, 201);
+    border-radius: 0.5rem;
+}
+
+#a_tem {
+    background: rgba(132, 173, 33);
+    border-radius: 0.5rem;
+}
+
+#a_ref {
+    background: rgba(124, 152, 173);
+    border-radius: 0.5rem;
+}
+
+#a_con {
+    background: rgba(240, 73, 37);
+    border-radius: 0.5rem;
+}
+
+/* ----------------------######### main  ############----------------------------- */
+
+
+/* ---------------------- accueil  ----------------------------- */
+.a_main {
+    height: fit-content;
+    position: relative;
+}
+
+#a_h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#a_h2 {
+    padding: 1rem 2rem;
+    max-width: 33rem;
+}
+
+#a_p {
+    padding: 1rem 2rem;
+    max-width: 35rem;
+}
+
+.a_main img {
+    padding: 1rem 1rem;
+    float: right;
+    height: 35rem;
+    width: 40rem;
+}
+
+#a_button {
+    background-color: rgba(70, 138, 201);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    width: 35rem;
+    border-radius: 0.5rem;
+    color: white;
+    position: absolute;
+    top: 40rem;
+    left: 2rem;
+    text-align: center;
+}
+
+
+
+
+/* ---------------------- formation  ----------------------------- */
+
+#f_h1 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+
+}
+
+.f_information {
+    display: flex;
+    padding: 2rem;
+}
+
+.f_information div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    margin: 0 1rem;
+    padding: 2rem;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+
+}
+
+.f_information div ul {
+    list-style-type: none;
+}
+
+.f_information div ul li {
+    padding: 0.2rem 0;
+}
+
+.f_information div p {
+    padding: 0.5rem 0;
+}
+
+.f_information div h2 {
+    padding: 1rem 0;
+    color: yellow;
+}
+
+
+/* ---------------------- temoignage ----------------------------- */
+.t_main{
+    padding: 0 2rem;
+}
+.t_main h1 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 2rem;
+}
+.t_name {
+    position: absolute;
+    padding-left: 1rem;
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.t_information article {
+    padding: 1rem 0;
+}
+
+.t_information article h3 {
+    font-style: italic;
+    color: white;
+    padding: 0.5rem 0;
+
+}
+.t_main p{
+    color: white;
+    padding-bottom: 1rem;
+}
+.t_main h2{
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+#c_button{
+    text-decoration: none;
+    font-size: large;
+    padding-inline: 0.5rem;
+    color: white;
+    text-shadow:  0.1rem 0.1rem 0px red,   -0.1rem -0.1rem 0px red,   0.1rem -0.1rem 0px red,    -0.1rem 0.1rem 0px red;
+}
+
+
+
+/* ---------------------- references ----------------------------- */
+.r_main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    gap:8rem;
+    color: white;
+}
+.r_main h1{
+    padding: 2rem;
+    font-style: italic;
+}
+.r_main p{
+    font-size: x-large;
+}
+.logo_entreprise{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* ---------------------- contact ----------------------------- */ 
