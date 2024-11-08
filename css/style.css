@@ -175,15 +175,17 @@ nav ul li a {
 
 
 /* ---------------------- temoignage ----------------------------- */
-.t_main{
+.t_main {
     padding: 0 2rem;
 }
+
 .t_main h1 {
     color: white;
     text-align: center;
     font-style: italic;
     padding: 2rem;
 }
+
 .t_name {
     position: absolute;
     padding-left: 1rem;
@@ -202,47 +204,118 @@ nav ul li a {
     padding: 0.5rem 0;
 
 }
-.t_main p{
+
+.t_main p {
     color: white;
     padding-bottom: 1rem;
 }
-.t_main h2{
+
+.t_main h2 {
     color: white;
     text-align: center;
     padding: 1rem 0;
     font-size: 3rem;
 }
-#c_button{
+
+#t_button {
     text-decoration: none;
     font-size: large;
     padding-inline: 0.5rem;
     color: white;
-    text-shadow:  0.1rem 0.1rem 0px red,   -0.1rem -0.1rem 0px red,   0.1rem -0.1rem 0px red,    -0.1rem 0.1rem 0px red;
+    text-shadow: 0.1rem 0.1rem 0px red, -0.1rem -0.1rem 0px red, 0.1rem -0.1rem 0px red, -0.1rem 0.1rem 0px red;
 }
 
 
 
 /* ---------------------- references ----------------------------- */
-.r_main{
+.r_main {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 0 2rem;
-    gap:8rem;
+    gap: 8rem;
     color: white;
 }
-.r_main h1{
+
+.r_main h1 {
     padding: 2rem;
     font-style: italic;
 }
-.r_main p{
+
+.r_main p {
     font-size: x-large;
 }
-.logo_entreprise{
+
+.logo_entreprise {
     display: flex;
     justify-content: space-evenly;
 }
 
 
 
-/* ---------------------- contact ----------------------------- */ 
+/* ---------------------- contact ----------------------------- */
+.c_main h1{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 4rem;
+    padding : 2rem;
+}
+.formulaire{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem ;
+    margin: 0 10% 3rem 10%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+div label:first-child{
+    font-weight: bold;
+}
+.c_infop{
+    grid-row: span 3;
+}
+.situation_p , .modalités{
+    border: 0.1rem solid #00000055;
+    border-radius: 1rem;
+    grid-row: span 3;
+}*
+.regions{
+    grid-column: span 2;
+}
+#regions{
+    width: 100%;
+    height: 2rem;
+    margin: 1rem 0;
+}
+form div{
+    padding: 0.5rem;
+}
+#comm{
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+    resize: vertical;
+}
+.c_button{
+    grid-column: span 3;
+}
+#c_button{
+    width: 100%;
+    padding: 1rem 0;
+    background-color:#2C2C2C;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: larger;
+}
+#num_tlph,#adresse,#le_nom{
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+span{
+    color: red;
+}

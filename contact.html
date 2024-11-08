@@ -1,25 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" href="css/normalize.css">
-        <title>Contact</title>
-    </head>
-    <body class="c_body"> 
-        <header class="c_header">
-            <a href="index.html"><img  src="./img/logo_contact.png" alt="logo AFPA" title="accueil"></a>
-            <nav>
-                <ul>
-                    <li><a id="a_for" href="formation.html">Formation</a></li>
-                    <li><a id="a_tem" href="temoignages.html">Témoignages</a></li>
-                    <li><a id="a_ref" href="reference.html">Nos Référnces</a></li>
-                    <li><a id="a_con" href="contact.html">Nous Contacter</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="c_main">
 
-        </main>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" href="css/normalize.css">
+    <title>Contact</title>
+</head>
+
+<body class="c_body">
+    <header class="c_header">
+        <a href="index.html"><img src="./img/logo_contact.png" alt="logo AFPA" title="accueil"></a>
+        <nav>
+            <ul>
+                <li><a id="a_for" href="formation.html">Formation</a></li>
+                <li><a id="a_tem" href="temoignages.html">Témoignages</a></li>
+                <li><a id="a_ref" href="reference.html">Nos Référnces</a></li>
+                <li><a id="a_con" href="contact.html">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="c_main">
+        <h1>Informations Personnelles</h1>
+        <form method="get" action="http://www.afpa.fr">
+            <section class="formulaire">
+                <div>
+                    <label for="le_nom">Nom et prénom <span>*</span> </label><br> <input type="text" name="le_nom"
+                        id="le_nom" placeholder="Entrez votre nom et prénom ici..." required />
+                </div>
+                <div class="situation_p">
+                    <label> Situation actuelle <span>*</span> :</label>
+                    <div><input type="radio" required name="situation_p" value="demandeur" id="demandeur" /><label
+                            for="demandeur"> Demandeur d'emploi</label></div>
+                    <div><input type="radio" required name="situation_p" value="salarié" id="salarié" /><label
+                            for="salarié">
+                            Salarié en transition proféssionnelle</label></div>
+                    <div><input type="radio" required name="situation_p" value="étudiant" id="etudiant" /> <label
+                            for="etudiant">Étudiant</label></div>
+                    <div><input type="radio" required name="situation_p" value="autre" id="autre" /><label
+                            for="autre">Autre</div>
+                    </label>
+                </div>
+                <div class="modalités">
+                    <label> modalités d'apprentissage <span>*</span> :</label>
+                    <div> <input type="radio" required name="modalités" value="demandeur" id="presentiel" /><label
+                            for="presentiel">
+                            Demandeur d'emploi</label></div>
+                    <div><input type="radio" required name="modalités" value="salarié" id="distance" /><label
+                            for="distance">
+                            Salarié
+                            en
+                            transition proféssionnelle</label></div>
+                    <div><input type="radio" required name="modalités" value="étudiant" id="alternance" /> <label
+                            for="alternance">Étudiant</label></div>
+                    <div><input type="radio" required name="modalités" value="autre" id="a_autres" /><label
+                            for="a_autres">Autre</div>
+                    </label>
+                </div>
+                <div>
+                    <label for="adresse">Adresse Mail <span>*</span> </label> <br> <input type="email" name="adresse"
+                        id="adresse" placeholder="Entrez votre adresse mail ici ..." required />
+                </div>
+                <div>
+                    <label for="num_tlph">Numéro de téléphone <span>*</span><br> </label> <input type="tel"
+                        name="num_téléphone" id="num_tlph" placeholder="Entrez votre Numéro de téléphone ici..."
+                        required />
+                </div>
+                <div>
+                    <label for="comm">Commentaire </label> <br><textarea id="comm"
+                        placeholder="Vos commentaires"></textarea>
+                </div>
+                <div class="regions">
+                    <label for="regions">Région D'origine<span> *</span></label><br>
+                    <select id="regions" name="regions" required>
+                        <option value="" disabled selected>Sélectionner votre région</option>
+                        <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+                        <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+                        <option value="Bretagne">Bretagne</option>
+                        <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+                        <option value="Corse">Corse</option>
+                        <option value="Grand Est">Grand Est</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guyane">Guyane</option>
+                        <option value="Hauts-de-France">Hauts-de-France</option>
+                        <option value="Île-de-France">Île-de-France</option>
+                        <option value="Normandie">Normandie</option>
+                        <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+                        <option value="Occitanie">Occitanie</option>
+                        <option value="Pays de la Loire">Pays de la Loire</option>
+                        <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+                        <option value="Réunion">Réunion</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option value="Polynésie française">Polynésie française</option>
+                        <option value="Saint-Pierre-et-Miquelon">Saint-Pierre-et-Miquelon</option>
+                        <option value="Wallis-et-Futuna">Wallis-et-Futuna</option>
+                    </select>
+                </div>
+                <div class="c_button"><button type="submit" id="c_button">Soumettre</button>
+                    <!-- <button type="reset" style="color: red;">annuler</button> -->
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+
 </html>
