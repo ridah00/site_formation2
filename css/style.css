@@ -49,13 +49,13 @@ nav ul li {
     margin-left: 2rem;
 }
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
     margin-inline: 1rem;
     padding: 0.5rem 2rem;
-}
+} */
 
 #a_for {
     background: rgba(70, 138, 201);
@@ -319,3 +319,109 @@ form div{
 span{
     color: red;
 }
+/* -------------------------------------------------media----------------------------------------------- */
+/* -------------------------accueil----------------------------- */
+
+@media (max-width:560px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        flex-direction: column;
+
+    }
+    header nav{
+        width: 100%;
+    }
+    header a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+    }
+    header img{
+        width: 100%;
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    nav ul li{
+        width: 100%;
+        margin: 0;
+    }
+    #a_p{
+        font-size: 1.5rem;
+    }
+    .a_main img{
+        width: 100%;
+        padding: 0;
+    }
+    #a_button{
+        position: static;
+        width: 100%;
+        display:block;
+        
+    }
+    /* -------------------------formation----------------------------- */
+    .f_information{
+        flex-direction: column;
+        padding: 0;
+    }
+    .f_information div{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #f_h1{
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+    /* -------------------------references----------------------------- */
+    .r_main{
+        gap:4rem;
+    }
+    .logo_entreprise{
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    /* -------------------------contact----------------------------- */
+    .c_main h1{
+        font-size: 3rem;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulaire div:nth-child(1){
+        order: 1;
+    }
+    .formulaire div:nth-child(2){
+        order: 4;
+    }
+    .formulaire div:nth-child(3){
+        order: 5;
+    }
+    .formulaire div:nth-child(4){
+        order: 2;
+    }
+    .formulaire div:nth-child(5){
+        order: 3;
+    }
+    .formulaire div:nth-child(6){
+        order: 6;
+    }
+    .formulaire div:nth-child(7){
+        order: 7;
+    }
+    .formulaire div:nth-child(8){
+        order: 8;
+    }
+}
+
+
